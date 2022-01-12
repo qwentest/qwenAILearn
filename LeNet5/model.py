@@ -45,7 +45,8 @@ class MyLeNet5(Model):
         self.pool1 = AvgPool2D(pool_size=(2, 2), strides=2)  # 得到14 * 14 * 6
 
         # 第二组卷积、池化
-        self.conv2 = Conv2D(filters=16, kernel_size=(5, 5), activation='sigmoid', padding='same')  # 得到10 * 10 * 16
+        # 得到10 * 10 * 16, 这里应该vaild，如果是same那么尺寸不变
+        self.conv2 = Conv2D(filters=16, kernel_size=(5, 5), activation='sigmoid')
         self.pool2 = AvgPool2D(pool_size=(2, 2), strides=2)  # 得到5*5*16
 
         # 摊平所有数据
@@ -69,7 +70,7 @@ class MyLeNet5(Model):
         # 全连接
         self.fc1 = Dense(120, activation="sigmoid")
         self.fc2 = Dense(84, activation="sigmoid")
-        self.fc3 = Dense(10, activation="softmax")
+        self.fc3 = Dense(10, activation="softmax")#因为手写数字识别的类别个数是10
 
     """
     call()的本质是将一个类变成一个函数（使这个类的实例可以像函数一样调用）
@@ -87,8 +88,11 @@ class MyLeNet5(Model):
         x = self.fc3(x)
         return x
 
+
 if __name__ == "__main__":
-    x = 1
-    # model = MyLeNet5()
+    x = tf.random.normal([1, 28, 28, 1])  # 4 张,28 * 28大小，1个通道的灰色图像
+    model = MyLeNet5()
+    model.build([1, 28, 28, 1])
+    print(model.summary())
     # y = model(x)
-    
+    # print(y)
