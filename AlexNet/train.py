@@ -60,6 +60,7 @@ def main():
     model.build((batch_size,227,227,3))
     model.summary()
     # training
+    # model.load_weights("./weights/myAlex.h5")
 
     model.compile(optimizer=tf.keras.optimizers.Adam(learning_rate=0.00001),
                   loss=tf.keras.losses.CategoricalCrossentropy(from_logits=False),
