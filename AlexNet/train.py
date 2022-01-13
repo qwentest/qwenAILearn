@@ -20,12 +20,12 @@ import os
 
 def main():
     path = os.path.abspath(os.path.dirname(os.getcwd()))
-    train_dir = "{}/dataSet/train".format(path)
-    var_dir = "{}/dataSet/val".format(path)
+    train_dir = "/Users/qcc/PycharmProjects/dataSet/train"
+    var_dir = "/Users/qcc/PycharmProjects/dataSet/val"
     img_height = 227
     img_width = 227
-    epochs = 100
-    batch_size = 16
+    epochs = 10
+    batch_size = 32
     """
     ImageDataGenerator()是keras.preprocessing.image模块中的图片生成器，同时也可以在batch中对数据进行增强，扩充数据集大小，增强模型的泛化能力。比如进行旋转，变形，归一化等等。
     参考：https://www.jianshu.com/p/d23b5994db64
@@ -61,7 +61,7 @@ def main():
     model.summary()
     # training
 
-    model.compile(optimizer=tf.keras.optimizers.Adam(learning_rate=0.003),
+    model.compile(optimizer=tf.keras.optimizers.Adam(learning_rate=0.00001),
                   loss=tf.keras.losses.CategoricalCrossentropy(from_logits=False),
                   metrics=['accuracy']
                   )
