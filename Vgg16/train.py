@@ -1,35 +1,33 @@
 # coding: utf-8 
-# @时间   : 2022/1/13 8:26 上午
+# @时间   : 2022/1/14 8:43 上午
 # @作者   : 文山
 # @邮箱   : wolaizhinidexin@163.com
 # @作用   :
 # @文件   : train.py
 # @微信   ：qwentest123
-import json
-import os
-from tensorflow.keras.preprocessing.image import ImageDataGenerator
+import time
+
 import tensorflow as tf
 import numpy as np
 import pandas as pd
-from tensorflow.keras.layers import Dense, Flatten, Conv2D, AvgPool2D, MaxPool2D
 from tensorflow.keras import Model
-import matplotlib.pyplot as plt
-from model import MyAlextNet
 import os
+from tensorflow.keras.preprocessing.image import ImageDataGenerator
+
+from model import MyVgg16
+import matplotlib.pyplot as plt
 
 
 def main():
     path = os.path.abspath(os.path.dirname(os.getcwd()))
     train_dir = "/Users/qcc/PycharmProjects/dataSet/train"
     var_dir = "/Users/qcc/PycharmProjects/dataSet/val"
-    img_height = 227
-    img_width = 227
+    img_height = 224
+    img_width = 224
     epochs = 10
     batch_size = 32
-    """
-    ImageDataGenerator()是keras.preprocessing.image模块中的图片生成器，同时也可以在batch中对数据进行增强，扩充数据集大小，增强模型的泛化能力。比如进行旋转，变形，归一化等等。
-    参考：https://www.jianshu.com/p/d23b5994db64
-    """
+
+    # 处理数据
     train_image_generator = ImageDataGenerator(rescale=1. / 255, horizontal_flip=True)
     val_image_generator = ImageDataGenerator(rescale=1. / 255)
     # 从路径生成增强数据
@@ -51,28 +49,21 @@ def main():
     total_val = val_data_gen.n
     # 将文件夹的名称生成key,value是编号
     class_indices = train_data_gen.class_indices
-    inverse_dict = dict((val, key) for key, val in class_indices.items())
-    # 将类别写到json文件中，供pre的时候用
-    with open("{}/class_indices.json".format(path), 'w') as f:
-        f.write(json.dumps(inverse_dict))
 
-    model = MyAlextNet(num_classes=len(inverse_dict))
-    model.build((batch_size,227,227,3))
+    model = MyVgg16(num_class=len(class_indices))
+    model.build((batch_size, 224, 224, 3))
     model.summary()
-    # training
-    # model.load_weights("./weights/myAlex.h5")
-
     model.compile(optimizer=tf.keras.optimizers.Adam(learning_rate=0.001),
                   loss=tf.keras.losses.CategoricalCrossentropy(from_logits=False),
                   metrics=['accuracy']
                   )
+    if not os.path.exists("./weights"): os.makedirs("./weights")
     # 该回调函数将在每个epoch后保存模型到filepath
-    callbacks = [tf.keras.callbacks.ModelCheckpoint(filepath='./weights/myAlex.h5',
+    callbacks = [tf.keras.callbacks.ModelCheckpoint(filepath='./weights/myVgg16_{}.h5'.format(epochs),
                                                     save_best_only=True,
                                                     save_weights_only=True,
                                                     monitor='val_loss')]
-    # 135011 // 32 = 4219
-    # 524 // 32 = 16
+    print("total_train // batch_size=,total_val // batch_size=".format(total_train // batch_size,total_val // batch_size))
     history = model.fit(x=train_data_gen,
                         steps_per_epoch=total_train // batch_size,
                         epochs=epochs,
@@ -104,7 +95,7 @@ def main():
     plt.ylabel('accuracy')
     plt.show()
 
-import time
+
 if __name__ == "__main__":
     t1 = time.time()
     main()

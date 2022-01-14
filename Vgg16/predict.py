@@ -12,12 +12,12 @@ from tensorflow.keras.layers import Dense, Flatten, Conv2D, AvgPool2D, MaxPool2D
 from tensorflow.keras import Model
 import json
 from PIL import Image
-from model import MyAlextNet
+from model import MyVgg16
 import time
 
 def main(img_path):
-    img_height = 227
-    img_width = 227
+    img_height = 224
+    img_width = 224
     img = Image.open(img_path)
     img = img.resize((img_width, img_height))
 
@@ -25,9 +25,9 @@ def main(img_path):
     # 表示在a的第一个维度上增加一个新的维度，而其他维度整体往右移，最终得到shape为(1, m, n, c)的新数组
     img = (np.expand_dims(img, 0))
     class_indices = {"0": "daisy", "1": "dandelion", "2": "roses", "3": "sunflowers", "4": "tulips"}
-    model = MyAlextNet(num_classes=len(class_indices))
-    model.build((1, 227, 227, 3))
-    weight_path = "./weights/myAlex.h5"
+    model = MyVgg16(num_class=len(class_indices))
+    model.build((1, 224, 224, 3))
+    weight_path = "./weights/myVgg16_10.h5"
     model.load_weights(weight_path)
     t1 = time.time()
     result = model.predict(img)
@@ -41,4 +41,4 @@ def main(img_path):
     print(res)
 
 if __name__ == "__main__":
-    main('./test/1.jpeg')
+    main('../AlexNet/test/1.jpeg')
