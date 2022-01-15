@@ -1,13 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="27f9a5c5-900b-4a01-9e39-bc1b6abbf5d1" name="Default Changelist" comment="vgg16增加">
+    <list default="true" id="27f9a5c5-900b-4a01-9e39-bc1b6abbf5d1" name="Default Changelist" comment="GoogleNetV1版本代码的增加">
       <change afterPath="$PROJECT_DIR$/AlexNet/weights/myAlex.h5" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/GoogleNet/model.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/GoogleNet/predict.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/GoogleNet/train.py" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/GoogleNet/weights/googleNetV1_10.h5" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/GoogleNet/说明.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ResNet50/model.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ResNet50/predict.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ResNet50/train.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ResNet50/weights/resnet50_10.h5" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ResNet50/说明.md" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/Vgg16/weights/myVgg16_10.h5" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
@@ -52,8 +53,8 @@
       <force-push-target remote-path="origin" branch="main" />
     </force-push-targets>
   </component>
-  <component name="RunManager" selected="Python.predict (2)">
-    <configuration name="model (1)" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="Python.predict">
+    <configuration name="model" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="qwenAILearn" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -61,32 +62,11 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/GoogleNet" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/ResNet50" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/GoogleNet/model.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="predict (1)" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="qwenAILearn" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Vgg16" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Vgg16/predict.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/ResNet50/model.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -124,11 +104,11 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/AlexNet" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/ResNet50" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/AlexNet/predict.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/ResNet50/predict.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -158,13 +138,34 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="train" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="qwenAILearn" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/ResNet50" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/ResNet50/train.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.predict" />
+        <item itemvalue="Python.train" />
+        <item itemvalue="Python.model" />
         <item itemvalue="Python.predict (2)" />
         <item itemvalue="Python.train (2)" />
-        <item itemvalue="Python.model (1)" />
-        <item itemvalue="Python.predict (1)" />
-        <item itemvalue="Python.predict" />
       </list>
     </recent_temporary>
   </component>
@@ -184,7 +185,14 @@
       <option name="project" value="LOCAL" />
       <updated>1642130014626</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="GoogleNetV1版本代码的增加">
+      <created>1642147243940</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1642147243941</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -201,6 +209,14 @@
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="vgg16增加" />
-    <option name="LAST_COMMIT_MESSAGE" value="vgg16增加" />
+    <MESSAGE value="GoogleNetV1版本代码的增加" />
+    <option name="LAST_COMMIT_MESSAGE" value="GoogleNetV1版本代码的增加" />
+  </component>
+  <component name="XDebuggerManager">
+    <watches-manager>
+      <configuration name="PythonConfigurationType">
+        <watch expression="block" language="Python" />
+      </configuration>
+    </watches-manager>
   </component>
 </project>
