@@ -118,7 +118,6 @@ class BottleNeck(layers.Layer):
 
 
 class MyResNet(Model):
-
     def __init__(self, block, block_num, num_class=4, include_top=True, **kwargs):
         super(MyResNet, self).__init__(**kwargs)
         self.include_top = include_top
@@ -127,6 +126,7 @@ class MyResNet(Model):
         self.bn1 = layers.BatchNormalization(momentum=0.9, epsilon=1e-5)
         self.relu1 = layers.ReLU()
         self.maxpool1 = layers.MaxPool2D(pool_size=3, strides=2, padding='same')
+
 
         # 构建残差块 NHWC，只有第一个残差块的s=1,其它都是s=2
         self.block1 = self._make_layer(block, True, 64, block_num[0])
