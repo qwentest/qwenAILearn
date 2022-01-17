@@ -1,5 +1,5 @@
 # coding: utf-8 
-# @时间   : 2022/1/15 2:53 下午
+# @时间   : 2022/1/17 3:08 下午
 # @作者   : 文山
 # @邮箱   : wolaizhinidexin@163.com
 # @作用   :
@@ -11,20 +11,11 @@ import pandas as pd
 from tensorflow.keras import Model, Sequential, layers
 from tensorflow.keras import Model
 import time, json, os
-import tensorflow as tf
-import numpy as np
-import pandas as pd
-from tensorflow.keras import Model, Sequential, layers
-from tensorflow.keras import Model
-import time, json, os
 
-from model import MyMobileNetV1
-from model_v2 import MyMobileNetV2
-
+from model import shufflenet_v2_x1_0
 import matplotlib.pyplot as plt
 from tensorflow.keras.preprocessing.image import ImageDataGenerator
 
-from model_v3 import MyMobileNetV3_large
 
 def main():
     path = os.path.abspath(os.path.dirname(os.getcwd()))
@@ -59,7 +50,7 @@ def main():
     class_indices = train_data_gen.class_indices
 
     # model = MyMobileNetV2(num_class=len(class_indices))
-    model = MyMobileNetV3_large(num_class=len(class_indices))
+    model = shufflenet_v2_x1_0(num_class=len(class_indices))
     model.build((batch_size, 224, 224, 3))
     model.summary()
     model.compile(optimizer=tf.keras.optimizers.Adam(learning_rate=0.001),
@@ -68,7 +59,7 @@ def main():
                   )
     if not os.path.exists("./weights"): os.makedirs("./weights")
     # 该回调函数将在每个epoch后保存模型到filepath
-    callbacks = [tf.keras.callbacks.ModelCheckpoint(filepath='./weights/mobileNetV3_{}.h5'.format(epochs),
+    callbacks = [tf.keras.callbacks.ModelCheckpoint(filepath='./weights/shuffleNetV2_{}.h5'.format(epochs),
                                                     save_best_only=True,
                                                     save_weights_only=True,
                                                     monitor='val_loss')]

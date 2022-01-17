@@ -43,6 +43,7 @@ class InvertedResidual(layers.Layer):
         self.branch = Sequential(layer_list, name='branch_conv')
 
     def call(self, inputs, training=False, **kwargs):
+        # 只有步长为1，才能进行shortcut
         if self.is_shortcut:
             # 将输出与InvertedResidual进行残差输出
             return inputs + self.branch(inputs, training=training)
