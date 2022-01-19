@@ -1,11 +1,10 @@
 # coding: utf-8 
-# @时间   : 2022/1/17 3:08 下午
+# @时间   : 2022/1/18 8:42 上午
 # @作者   : 文山
 # @邮箱   : wolaizhinidexin@163.com
 # @作用   :
 # @文件   : predict.py
 # @微信   ：qwentest123
-
 import numpy as np
 import pandas as pd
 from tensorflow.keras.layers import Dense, Flatten, Conv2D, AvgPool2D, MaxPool2D
@@ -13,8 +12,9 @@ from tensorflow.keras import Model
 import json
 from PIL import Image
 import time
-from model import shufflenet_v2_x1_0
-
+from model19 import DarkNet19
+from model53 import DarkNet53
+from modelcsp import CSPDarkNet53
 def main(img_path):
     img_height = 224
     img_width = 224
@@ -25,9 +25,9 @@ def main(img_path):
     # 表示在a的第一个维度上增加一个新的维度，而其他维度整体往右移，最终得到shape为(1, m, n, c)的新数组
     img = (np.expand_dims(img, 0))
     class_indices = {"0": "daisy", "1": "dandelion", "2": "roses", "3": "sunflowers", "4": "tulips"}
-    model = shufflenet_v2_x1_0(num_class=len(class_indices))
+    model = CSPDarkNet53(num_class=len(class_indices))
     model.build((1, 224, 224, 3))
-    weight_path = "./weights/shuffleNetV2_10.h5"
+    weight_path = "./weights/csp_darknet_5310.h5"
     model.load_weights(weight_path)
     t1 = time.time()
     result = model.predict(img)

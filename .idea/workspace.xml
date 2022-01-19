@@ -1,26 +1,44 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="27f9a5c5-900b-4a01-9e39-bc1b6abbf5d1" name="Default Changelist" comment="增加moblienetv1">
+    <list default="true" id="27f9a5c5-900b-4a01-9e39-bc1b6abbf5d1" name="Default Changelist" comment="增加shuffleNetV2的代码">
       <change afterPath="$PROJECT_DIR$/AlexNet/weights/myAlex.h5" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DarkNet/model19.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DarkNet/model53.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DarkNet/modelcsp.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DarkNet/predict.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DarkNet/train.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DarkNet/weights/csp_darknet_5310.h5" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DarkNet/weights/darknet_1910.h5" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DarkNet/weights/darknet_5310.h5" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DarkNet/说明.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/EfficientNet/model.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/EfficientNet/model_v2.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/EfficientNet/predict.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/EfficientNet/train.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/EfficientNet/weights/efficient_v1_b010.h5" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/EfficientNet/weights/efficient_v1_b0_nose10.h5" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/EfficientNet/weights/efficient_v1_b0_se_last410.h5" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/EfficientNet/weights/efficient_v1_b0_se_top310.h5" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/EfficientNet/weights/efficient_v2_s10.h5" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/EfficientNet/说明.md" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/GoogleNet/weights/googleNetV1_10.h5" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/MobileNet/model_v3.py" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/MobileNet/weights/mobileNetV1_10.h5" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/MobileNet/weights/mobileNetV2_10.h5" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/MobileNet/weights/mobileNetV3_10.h5" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/ResNet50/weights/resnet50_10.h5" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ShuffleNet/model.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ShuffleNet/predict.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ShuffleNet/train.py" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/ShuffleNet/weights/shuffleNetV2_10.h5" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ShuffleNet/说明.md" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/Vgg16/weights/myVgg16_10.h5" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MobileNet/model_v2.py" beforeDir="false" afterPath="$PROJECT_DIR$/MobileNet/model_v2.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MobileNet/predict.py" beforeDir="false" afterPath="$PROJECT_DIR$/MobileNet/predict.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MobileNet/train.py" beforeDir="false" afterPath="$PROJECT_DIR$/MobileNet/train.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MobileNet/说明.md" beforeDir="false" afterPath="$PROJECT_DIR$/MobileNet/说明.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AlexNet/model.py" beforeDir="false" afterPath="$PROJECT_DIR$/AlexNet/model.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/GoogleNet/model.py" beforeDir="false" afterPath="$PROJECT_DIR$/GoogleNet/model.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LeNet5/model.py" beforeDir="false" afterPath="$PROJECT_DIR$/LeNet5/model.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MobileNet/model.py" beforeDir="false" afterPath="$PROJECT_DIR$/MobileNet/model.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ResNet50/model.py" beforeDir="false" afterPath="$PROJECT_DIR$/ResNet50/model.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ShuffleNet/model.py" beforeDir="false" afterPath="$PROJECT_DIR$/ShuffleNet/model.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ShuffleNet/predict.py" beforeDir="false" afterPath="$PROJECT_DIR$/ShuffleNet/predict.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Vgg16/model.py" beforeDir="false" afterPath="$PROJECT_DIR$/Vgg16/model.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -62,8 +80,8 @@
       <force-push-target remote-path="origin" branch="main" />
     </force-push-targets>
   </component>
-  <component name="RunManager" selected="Python.predict">
-    <configuration name="model" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="Python.predict (1)">
+    <configuration name="modelcsp" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="qwenAILearn" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -71,32 +89,11 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/ShuffleNet" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/DarkNet" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/ShuffleNet/model.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="model_v3" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="qwenAILearn" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/MobileNet" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/MobileNet/model_v3.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/DarkNet/modelcsp.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -113,11 +110,11 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/MobileNet" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/DarkNet" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/MobileNet/predict.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/DarkNet/predict.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -134,11 +131,32 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/ShuffleNet" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/EfficientNet" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/ShuffleNet/predict.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/EfficientNet/predict.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="train (1)" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="qwenAILearn" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/DarkNet" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/DarkNet/train.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -155,11 +173,11 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/ShuffleNet" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/EfficientNet" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/ShuffleNet/train.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/EfficientNet/train.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -170,11 +188,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.predict (1)" />
+        <item itemvalue="Python.train (1)" />
+        <item itemvalue="Python.modelcsp" />
         <item itemvalue="Python.predict" />
         <item itemvalue="Python.train" />
-        <item itemvalue="Python.model" />
-        <item itemvalue="Python.model_v3" />
-        <item itemvalue="Python.predict (1)" />
       </list>
     </recent_temporary>
   </component>
@@ -215,7 +233,21 @@
       <option name="project" value="LOCAL" />
       <updated>1642322304992</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="增加shuffleNetV2的代码">
+      <created>1642410950624</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1642410950624</updated>
+    </task>
+    <task id="LOCAL-00006" summary="增加shuffleNetV2的代码">
+      <created>1642411077862</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1642411077862</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -228,6 +260,7 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
@@ -235,6 +268,7 @@
     <MESSAGE value="GoogleNetV1版本代码的增加" />
     <MESSAGE value="ResNet50的代码" />
     <MESSAGE value="增加moblienetv1" />
-    <option name="LAST_COMMIT_MESSAGE" value="增加moblienetv1" />
+    <MESSAGE value="增加shuffleNetV2的代码" />
+    <option name="LAST_COMMIT_MESSAGE" value="增加shuffleNetV2的代码" />
   </component>
 </project>
