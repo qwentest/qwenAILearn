@@ -1,44 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="27f9a5c5-900b-4a01-9e39-bc1b6abbf5d1" name="Default Changelist" comment="增加shuffleNetV2的代码">
+    <list default="true" id="27f9a5c5-900b-4a01-9e39-bc1b6abbf5d1" name="Default Changelist" comment="增加cspdarknet">
       <change afterPath="$PROJECT_DIR$/AlexNet/weights/myAlex.h5" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/DarkNet/model19.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/DarkNet/model53.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/DarkNet/modelcsp.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/DarkNet/predict.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/DarkNet/train.py" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/DarkNet/weights/csp_darknet_5310.h5" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DarkNet/weights/csp_darknet_534.h5" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/DarkNet/weights/darknet_1910.h5" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/DarkNet/weights/darknet_5310.h5" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/DarkNet/说明.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/EfficientNet/model.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/EfficientNet/model_v2.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/EfficientNet/predict.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/EfficientNet/train.py" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/EfficientNet/weights/efficient_v1_b010.h5" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/EfficientNet/weights/efficient_v1_b0_nose10.h5" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/EfficientNet/weights/efficient_v1_b0_se_last410.h5" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/EfficientNet/weights/efficient_v1_b0_se_top310.h5" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/EfficientNet/weights/efficient_v2_s10.h5" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/EfficientNet/说明.md" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/GoogleNet/weights/googleNetV1_10.h5" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/MobileNet/weights/mobileNetV1_10.h5" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/MobileNet/weights/mobileNetV2_10.h5" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/MobileNet/weights/mobileNetV3_10.h5" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/ResNet50/weights/resnet50_10.h5" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/ShuffleNet/weights/shuffleNetV2_10.h5" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/VGGSSD/model/vggssd.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/VGGSSD/说明.md" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/Vgg16/weights/myVgg16_10.h5" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AlexNet/model.py" beforeDir="false" afterPath="$PROJECT_DIR$/AlexNet/model.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GoogleNet/model.py" beforeDir="false" afterPath="$PROJECT_DIR$/GoogleNet/model.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/LeNet5/model.py" beforeDir="false" afterPath="$PROJECT_DIR$/LeNet5/model.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MobileNet/model.py" beforeDir="false" afterPath="$PROJECT_DIR$/MobileNet/model.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ResNet50/model.py" beforeDir="false" afterPath="$PROJECT_DIR$/ResNet50/model.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ShuffleNet/model.py" beforeDir="false" afterPath="$PROJECT_DIR$/ShuffleNet/model.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ShuffleNet/predict.py" beforeDir="false" afterPath="$PROJECT_DIR$/ShuffleNet/predict.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Vgg16/model.py" beforeDir="false" afterPath="$PROJECT_DIR$/Vgg16/model.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -80,8 +65,8 @@
       <force-push-target remote-path="origin" branch="main" />
     </force-push-targets>
   </component>
-  <component name="RunManager" selected="Python.predict (1)">
-    <configuration name="modelcsp" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="Python.vggssd">
+    <configuration name="labelme2coco" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="qwenAILearn" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -89,11 +74,11 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/DarkNet" />
-      <option name="IS_MODULE_SDK" value="true" />
+      <option name="WORKING_DIRECTORY" value="$USER_HOME$/Library/Containers/com.tencent.xinWeChat/Data/Library/Application Support/com.tencent.xinWeChat/2.0b4.0.9/58221246be0ba8ba1678e7e1e50a0fd7/Message/MessageTemp/b514ebf84c5677cf5b3b0ef63f750218/File" />
+      <option name="IS_MODULE_SDK" value="false" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/DarkNet/modelcsp.py" />
+      <option name="SCRIPT_NAME" value="$USER_HOME$/Library/Containers/com.tencent.xinWeChat/Data/Library/Application Support/com.tencent.xinWeChat/2.0b4.0.9/58221246be0ba8ba1678e7e1e50a0fd7/Message/MessageTemp/b514ebf84c5677cf5b3b0ef63f750218/File/labelme2coco.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -102,7 +87,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="predict (1)" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="main" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="qwenAILearn" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -110,11 +95,11 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/DarkNet" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/DarkNet/predict.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/main.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -123,7 +108,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="predict" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="model_v3" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="qwenAILearn" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -131,11 +116,11 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/EfficientNet" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/MobileNet" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/EfficientNet/predict.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/MobileNet/model_v3.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -144,7 +129,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="train (1)" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="other" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="qwenAILearn" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -152,11 +137,11 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/DarkNet" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/VGGSSD/model" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/DarkNet/train.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/VGGSSD/model/other.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -165,7 +150,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="train" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="vggssd" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="qwenAILearn" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -173,11 +158,11 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/EfficientNet" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/VGGSSD/model" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/EfficientNet/train.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/VGGSSD/model/vggssd.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -188,11 +173,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.predict (1)" />
-        <item itemvalue="Python.train (1)" />
-        <item itemvalue="Python.modelcsp" />
-        <item itemvalue="Python.predict" />
-        <item itemvalue="Python.train" />
+        <item itemvalue="Python.vggssd" />
+        <item itemvalue="Python.other" />
+        <item itemvalue="Python.main" />
+        <item itemvalue="Python.labelme2coco" />
+        <item itemvalue="Python.model_v3" />
       </list>
     </recent_temporary>
   </component>
@@ -247,7 +232,14 @@
       <option name="project" value="LOCAL" />
       <updated>1642411077862</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="增加cspdarknet">
+      <created>1642592452186</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1642592452186</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -269,6 +261,28 @@
     <MESSAGE value="ResNet50的代码" />
     <MESSAGE value="增加moblienetv1" />
     <MESSAGE value="增加shuffleNetV2的代码" />
-    <option name="LAST_COMMIT_MESSAGE" value="增加shuffleNetV2的代码" />
+    <MESSAGE value="增加cspdarknet" />
+    <option name="LAST_COMMIT_MESSAGE" value="增加cspdarknet" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$USER_HOME$/Library/Containers/com.tencent.xinWeChat/Data/Library/Application Support/com.tencent.xinWeChat/2.0b4.0.9/58221246be0ba8ba1678e7e1e50a0fd7/Message/MessageTemp/b514ebf84c5677cf5b3b0ef63f750218/File/labelme2coco.py</url>
+          <line>166</line>
+          <option name="timeStamp" value="67" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$USER_HOME$/Library/Containers/com.tencent.xinWeChat/Data/Library/Application Support/com.tencent.xinWeChat/2.0b4.0.9/58221246be0ba8ba1678e7e1e50a0fd7/Message/MessageTemp/b514ebf84c5677cf5b3b0ef63f750218/File/labelme2coco.py</url>
+          <line>17</line>
+          <option name="timeStamp" value="70" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/VGGSSD/model/vggssd.py</url>
+          <line>67</line>
+          <option name="timeStamp" value="81" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
